@@ -20,5 +20,9 @@ namespace PO1_ConstructeurMemoire
         public string Nom { get => nom; set => nom = value; }
         public string Ville { get => ville; set => ville = value; }
 
+        public override string? ToString()
+        {
+            return Nom + " de " + Ville;
+        }
     }
 }
